@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROWAVE TECHNOLOGIES - Custom Software, ERP Systems & Manufacturing Solutions</title>
+    <meta name="description" content="Prowave Technologies is a premier software house offering specialized Business ERP Systems, Manufacturing ERP, POS, CRM, Distribution, Pharmacy, Clinic, and HR Payroll software to grow your business.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="public/css/app.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/images/logo.png">
+</head>
+<body>
+
+    <!-- Custom Interactive Glowing Cursor Follower -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Background Canvas Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Ambient Glowing Radial Backgrounds -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Sticky Glassmorphism Header Nav -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <img src="public/images/logo.png" alt="Prowave Technologies Logo">
+                <span>PROWAVE <span class="gradient-text-lime">TECH</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#solutions" class="nav-link">Software Suites</a></li>
+                <li><a href="#tech-stack" class="nav-link">Tech Matrix</a></li>
+                <li><a href="#calculator" class="nav-link">Scope Estimator</a></li>
+                <li><a href="#process" class="nav-link">Workflow</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="mobile-drawer-cta">
+                    <a href="#calculator" class="btn btn-lime" style="width:100%; justify-content:center; margin-top:0.5rem;">
+                        <i class="fas fa-sliders"></i> Scope Estimator
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-right-actions">
+                <a href="#calculator" class="btn btn-lime nav-scope-btn" style="padding: 0.55rem 1.25rem; font-size: 0.88rem;">
+                    <i class="fas fa-sliders"></i> Scope Estimator
+                </a>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal-left">
+                    <div class="badge">
+                        <i class="fas fa-chart-line" style="color: var(--accent-lime);"></i> Empower & Scale Your Business
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        We Build <span class="gradient-text">Custom Software</span> & ERP Systems To Grow Your Business
+                    </h1>
+                    
+                    <p class="hero-desc">
+                        Prowave Technologies engineers enterprise ERP software, manufacturing solutions, POS, CRM, and intelligent AI automation designed to streamline operations and scale your revenue.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#solutions" class="btn btn-lime">
+                            <i class="fas fa-cubes"></i> Explore ERP Suites
+                        </a>
+                        <a href="#calculator" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Get Project Scope
+                        </a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <h3 class="counter-val" data-count="250" data-suffix="+">0</h3>
+                            <p>Software Suites Deployed</p>
+                        </div>
+                        <div class="metric-item">
+                            <h3 class="counter-val" data-count="99" data-suffix=".4%">0</h3>
+                            <p>Client SLA Uptime</p>
+                        </div>
+                        <div class="metric-item">
+                            <h3 class="counter-val" data-count="45" data-suffix="+">0</h3>
+                            <p>Tech Experts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual-card reveal-right">
+                    <!-- Floating Badges ALWAYS Above Code Window -->
+                    <div class="floating-pill pill-1">
+                        <i class="fas fa-industry" style="font-size: 1.2rem;"></i>
+                        <span>Manufacturing ERP Ready</span>
+                    </div>
+                    <div class="floating-pill pill-2">
+                        <i class="fas fa-shield-halved" style="font-size: 1.2rem;"></i>
+                        <span>Enterprise Security SLA</span>
+                    </div>
+
+                    <!-- Animated Code Card Window -->
+                    <div class="laravel-code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="window-title">App\Services\EnterpriseErpSuite.php</div>
+                            <div style="font-size: 0.75rem; color: var(--accent-lime);"><i class="fas fa-circle" style="font-size:8px;"></i> ACTIVE</div>
+                        </div>
+                        <div class="window-body">
+                            <p><span class="code-keyword">namespace</span> App\Services;</p>
+                            <br>
+                            <p><span class="code-keyword">class</span> <span class="code-class">ManufacturingErpSuite</span></p>
+                            <p>{</p>
+                            <p>&nbsp;&nbsp;<span class="code-comment">// Industrial Production & Raw Material BOM Control</span></p>
+                            <p>&nbsp;&nbsp;<span class="code-keyword">public function</span> <span class="code-func">runProductionPlan</span>(<span class="code-class">FactoryOrder</span> $order)</p>
+                            <p>&nbsp;&nbsp;{</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;$modules = [</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">'textileErp'</span> => <span class="code-string">'Loom & Production Tracking'</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">'posInventory'</span> => <span class="code-string">'Real-Time Stock Depletion'</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">'distribution'</span> => <span class="code-string">'Route Booking & Recovery'</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">'hrPayroll'</span> => <span class="code-string">'Biometric Salary Automation'</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;];</p>
+                            <br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> [</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">'status'</span> => <span class="code-string">'100% Operational Efficiency'</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">'yield'</span> => <span class="code-string">'Zero Raw Material Wastage'</span></p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;];</p>
+                            <p>&nbsp;&nbsp;}</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Real Portfolio Showcase (Moved Up) -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge">
+                        <i class="fas fa-trophy"></i> Featured Case Studies
+                    </div>
+                    <h2 class="section-title">Our Recent <span class="gradient-text">Software Projects</span></h2>
+                    <p class="section-subtitle">
+                        Explore real enterprise software systems, manufacturing ERPs, POS platforms, and distribution portals engineered by Prowave Technologies.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="glass-card portfolio-card reveal delay-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="public/images/portfolio-textile-erp.jpg" alt="Textile & Industrial Manufacturing ERP">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="badge badge-lime" style="font-size:0.75rem; padding:0.25rem 0.75rem; margin-bottom:0.7rem; letter-spacing:0.5px;">
+                                MANUFACTURING & INDUSTRIAL ERP
+                            </div>
+                            <h3>Textile & Industrial Manufacturing ERP</h3>
+                            <p>End-to-end industrial textile ERP covering yarn raw material BOM, loom production tracking, machine downtime logs, and automated yield accounting.</p>
+                            <div style="padding-top:0.9rem; border-top:1px solid var(--border-glass); font-size:0.88rem; color:var(--accent-lime); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+                                <i class="fas fa-chart-line"></i> Impact: Streamlined operations for 3 industrial textile plants with 99.99% uptime.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card portfolio-card reveal delay-200">
+                        <div class="portfolio-img-wrapper">
+                            <img src="public/images/portfolio-pos.jpg" alt="POS & Retail Inventory System">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="badge badge-lime" style="font-size:0.75rem; padding:0.25rem 0.75rem; margin-bottom:0.7rem; letter-spacing:0.5px;">
+                                RETAIL POS & INVENTORY SYSTEM
+                            </div>
+                            <h3>POS & Retail Inventory System</h3>
+                            <p>High-speed multi-branch retail POS featuring barcode scanning, real-time stock depletion alerts, and automated daily P&L reporting.</p>
+                            <div style="padding-top:0.9rem; border-top:1px solid var(--border-glass); font-size:0.88rem; color:var(--accent-lime); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+                                <i class="fas fa-chart-line"></i> Impact: Deployed across 150+ retail counters with real-time stock sync.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card portfolio-card reveal delay-300">
+                        <div class="portfolio-img-wrapper">
+                            <img src="public/images/portfolio-dms.jpg" alt="Distribution Management System (DMS)">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="badge badge-lime" style="font-size:0.75rem; padding:0.25rem 0.75rem; margin-bottom:0.7rem; letter-spacing:0.5px;">
+                                DISTRIBUTION & FIELD ORDER BOOKING
+                            </div>
+                            <h3>Distribution Management System (DMS)</h3>
+                            <p>Field sales order booking mobile app synchronized with distributor route planning, warehouse dispatch, and credit recovery logs.</p>
+                            <div style="padding-top:0.9rem; border-top:1px solid var(--border-glass); font-size:0.88rem; color:var(--accent-lime); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+                                <i class="fas fa-chart-line"></i> Impact: 80% faster credit recovery & route order dispatch velocity.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card portfolio-card reveal delay-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="public/images/portfolio-hr.jpg" alt="Corporate HR & Biometric Payroll System">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="badge badge-lime" style="font-size:0.75rem; padding:0.25rem 0.75rem; margin-bottom:0.7rem; letter-spacing:0.5px;">
+                                HR & BIOMETRIC PAYROLL PORTAL
+                            </div>
+                            <h3>Corporate HR & Biometric Payroll System</h3>
+                            <p>Enterprise HR system with biometric attendance device integration, automated salary slips, advance logs, and leave approval workflows.</p>
+                            <div style="padding-top:0.9rem; border-top:1px solid var(--border-glass); font-size:0.88rem; color:var(--accent-lime); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+                                <i class="fas fa-chart-line"></i> Impact: Automated monthly salary processing for 1,200+ employees.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card portfolio-card reveal delay-200">
+                        <div class="portfolio-img-wrapper">
+                            <img src="public/images/portfolio-crm.jpg" alt="CRM & Sales Automation Portal">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="badge badge-lime" style="font-size:0.75rem; padding:0.25rem 0.75rem; margin-bottom:0.7rem; letter-spacing:0.5px;">
+                                CRM & LEAD MANAGEMENT
+                            </div>
+                            <h3>CRM & Sales Automation Portal</h3>
+                            <p>Customer relationship management system with automated deal pipeline tracking, WhatsApp follow-ups, and sales team analytics.</p>
+                            <div style="padding-top:0.9rem; border-top:1px solid var(--border-glass); font-size:0.88rem; color:var(--accent-lime); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+                                <i class="fas fa-chart-line"></i> Impact: Boosted lead conversion rates by 42% across corporate sales channels.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card portfolio-card reveal delay-300">
+                        <div class="portfolio-img-wrapper">
+                            <img src="public/images/portfolio-clinic.jpg" alt="Clinic & Hospital EMR System">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="badge badge-lime" style="font-size:0.75rem; padding:0.25rem 0.75rem; margin-bottom:0.7rem; letter-spacing:0.5px;">
+                                HEALTHCARE & PATIENT CARE
+                            </div>
+                            <h3>Clinic & Hospital EMR System</h3>
+                            <p>Comprehensive patient EMR records system with online doctor scheduling, lab report dispatch, and prescription billing.</p>
+                            <div style="padding-top:0.9rem; border-top:1px solid var(--border-glass); font-size:0.88rem; color:var(--accent-lime); font-weight:600; display:flex; align-items:center; gap:0.5rem;">
+                                <i class="fas fa-chart-line"></i> Impact: Digitized patient history and reduced wait times across 25 medical clinics.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge badge-lime">
+                        <i class="fas fa-layer-group"></i> Core Capabilities
+                    </div>
+                    <h2 class="section-title">End-to-End <span class="gradient-text">Software Engineering</span> Services</h2>
+                    <p class="section-subtitle">
+                        From custom enterprise ERP systems to mobile app ecosystems and AI automation, we build software designed to transform your business.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="glass-card service-card reveal delay-100">
+                        <div class="service-icon-box">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>Custom Software & Enterprise Systems</h3>
+                        <p>Tailor-made enterprise software systems, scalable microservices, multi-tenant SaaS platforms, and automated workflow engines.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Enterprise ERP</span>
+                            <span class="service-tag">POS Systems</span>
+                            <span class="service-tag">CRM Portals</span>
+                            <span class="service-tag">Manufacturing</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card service-card reveal delay-200">
+                        <div class="service-icon-box">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Full-Stack Web Development</h3>
+                        <p>Ultra-fast, secure, and responsive web applications designed to convert visitors and scale your business operations.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Custom Web Apps</span>
+                            <span class="service-tag">REST & GraphQL APIs</span>
+                            <span class="service-tag">Reactive Frontends</span>
+                            <span class="service-tag">Secure Portals</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card service-card reveal delay-300">
+                        <div class="service-icon-box">
+                            <i class="fas fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>Mobile App Engineering</h3>
+                        <p>High-performance cross-platform iOS and Android mobile apps with intuitive UX, real-time push notifications, and cloud sync.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">iOS & Android Apps</span>
+                            <span class="service-tag">Cross-Platform Native</span>
+                            <span class="service-tag">Real-Time Push</span>
+                            <span class="service-tag">Cloud Backend</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card service-card reveal delay-100">
+                        <div class="service-icon-box">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Intelligent Automation</h3>
+                        <p>Transform your business with custom AI assistants, automated data extraction pipelines, intelligent chatbots, and workflow automation.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">AI Chatbots</span>
+                            <span class="service-tag">LLM Integration</span>
+                            <span class="service-tag">Process Automation</span>
+                            <span class="service-tag">Predictive Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card service-card reveal delay-200">
+                        <div class="service-icon-box">
+                            <i class="fas fa-cloud-arrow-up"></i>
+                        </div>
+                        <h3>Cloud Infrastructure & DevOps</h3>
+                        <p>Robust cloud architecture setup, server optimization, CI/CD pipeline automation, zero-downtime deployment, and 24/7 monitoring.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">AWS / Cloud</span>
+                            <span class="service-tag">Docker Containerization</span>
+                            <span class="service-tag">CI/CD Pipelines</span>
+                            <span class="service-tag">24/7 Monitoring</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card service-card reveal delay-300">
+                        <div class="service-icon-box">
+                            <i class="fas fa-bezier-curve"></i>
+                        </div>
+                        <h3>UI/UX & Product Design</h3>
+                        <p>User-first digital experiences, high-converting product interfaces, modern design systems, and rapid interactive prototyping.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">User Experience</span>
+                            <span class="service-tag">Modern UI Design</span>
+                            <span class="service-tag">Interactive Prototypes</span>
+                            <span class="service-tag">Design Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Showcase Section -->
+        <section id="solutions" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge badge-lime">
+                        <i class="fas fa-cubes"></i> Industry Solutions
+                    </div>
+                    <h2 class="section-title">Enterprise <span class="gradient-text">Business Software</span> & ERP Systems</h2>
+                    <p class="section-subtitle">
+                        Complete business automation suites designed to streamline operations for manufacturing plants, retail chains, distribution networks, healthcare clinics, and corporate enterprises.
+                    </p>
+                </div>
+
+                <!-- Manufacturing Industry Featured Spotlight Card -->
+                <div class="glass-card reveal delay-100" style="padding: 2.8rem; margin-bottom: 3.5rem; border: 1.5px solid rgba(101, 163, 13, 0.35); background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 50%, rgba(101, 163, 13, 0.08) 100%); box-shadow: 0 10px 40px rgba(101, 163, 13, 0.12);">
+                    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; align-items: center;">
+                        <div>
+                            <div class="badge badge-lime" style="font-size: 0.8rem; margin-bottom: 1rem; background: rgba(101, 163, 13, 0.12); color: #4D7C0F; border-color: rgba(101, 163, 13, 0.35);">
+                                <i class="fas fa-industry"></i> FEATURED: Manufacturing & Textile Industry ERP
+                            </div>
+                            <h3 style="font-size: 2.3rem; font-weight: 800; margin-bottom: 1rem; color: #0F172A;">Textile & Industrial Manufacturing ERP</h3>
+                            <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.6rem;">
+                                Tailored specifically for manufacturing plants, textile mills, and production factories. Gain 100% control over raw material BOM (Bill of Materials), loom/machine downtime logs, production line yields, batch inventory, and automated cost accounting.
+                            </p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem;">
+                                <span class="service-tag" style="background: rgba(101, 163, 13, 0.1); border-color: rgba(101, 163, 13, 0.3); color: #3F6212; font-weight: 600;"><i class="fas fa-check" style="color: #65A30D;"></i> Production Planning</span>
+                                <span class="service-tag" style="background: rgba(101, 163, 13, 0.1); border-color: rgba(101, 163, 13, 0.3); color: #3F6212; font-weight: 600;"><i class="fas fa-check" style="color: #65A30D;"></i> Raw Material BOM</span>
+                                <span class="service-tag" style="background: rgba(101, 163, 13, 0.1); border-color: rgba(101, 163, 13, 0.3); color: #3F6212; font-weight: 600;"><i class="fas fa-check" style="color: #65A30D;"></i> Machine Downtime Logs</span>
+                                <span class="service-tag" style="background: rgba(101, 163, 13, 0.1); border-color: rgba(101, 163, 13, 0.3); color: #3F6212; font-weight: 600;"><i class="fas fa-check" style="color: #65A30D;"></i> Batch Inventory</span>
+                                <span class="service-tag" style="background: rgba(101, 163, 13, 0.1); border-color: rgba(101, 163, 13, 0.3); color: #3F6212; font-weight: 600;"><i class="fas fa-check" style="color: #65A30D;"></i> Yield & Wastage Analytics</span>
+                            </div>
+                            <a href="#contact" class="btn btn-lime" onclick="prefillContactForm('Textile & Manufacturing ERP System')">
+                                <i class="fas fa-industry"></i> Request Manufacturing ERP Demo
+                            </a>
+                        </div>
+
+                        <div style="text-align: center; padding: 2.2rem 1.8rem; background: #FFFFFF; border: 1px solid rgba(101, 163, 13, 0.25); border-radius: var(--radius-md); box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);">
+                            <div style="font-size: 3.8rem; color: #65A30D; margin-bottom: 1rem;">
+                                <i class="fas fa-gears fa-spin" style="animation-duration: 15s;"></i>
+                            </div>
+                            <div style="font-size: 1.8rem; font-weight: 800; color: #0F172A; margin-bottom: 0.3rem;">Manufacturing Ready</div>
+                            <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 1.4rem;">Complete Factory Floor & Inventory Control</p>
+                            <div style="color: #F59E0B; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 0.2rem;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span style="color: #0F172A; font-weight: 700; font-size: 0.95rem; margin-left: 0.6rem;">5.0 / 5.0 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filterable Software Categories -->
+                <div class="tech-tabs reveal delay-100">
+                    <button class="tech-tab-btn active" data-filter="all-suites">All 10 Software Suites</button>
+                    <button class="tech-tab-btn" data-filter="manufacturing">Manufacturing & Industrial</button>
+                    <button class="tech-tab-btn" data-filter="enterprise">Enterprise & ERP</button>
+                    <button class="tech-tab-btn" data-filter="retail">Retail & POS</button>
+                    <button class="tech-tab-btn" data-filter="distribution">Distribution & Supply</button>
+                    <button class="tech-tab-btn" data-filter="healthcare">Healthcare & HR</button>
+                </div>
+
+                <!-- 10 Software Systems Grid -->
+                <div class="services-grid">
+                    <!-- 1. Textile ERP -->
+                    <div class="glass-card service-card reveal suite-card delay-100" data-category="manufacturing">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-industry"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Manufacturing & Industrial Factories</div>
+                        <h3>Textile & Manufacturing ERP System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Comprehensive manufacturing ERP covering production planning, raw material BOM, loom/machine tracking, batch inventory, and yield analysis.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Production Planning</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Raw Material BOM</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Machine Downtime</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Yield Analytics</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('Textile & Manufacturing ERP System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 2. ERP System -->
+                    <div class="glass-card service-card reveal suite-card delay-200" data-category="enterprise">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-building-gear"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Enterprise Businesses & Corporations</div>
+                        <h3>ERP Management System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Complete business automation suite unifying finances, multi-branch operations, procurement, stock control, and executive BI reporting.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Financial Accounting</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Procurement & Vendor</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Multi-Branch Sync</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Executive BI</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('ERP Management System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 3. POS System -->
+                    <div class="glass-card service-card reveal suite-card delay-300" data-category="retail">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-cash-register"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Retail Chains, Supermarkets & Shops</div>
+                        <h3>POS & Inventory Management System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">High-speed point of sale with barcode scanning, automated stock alerts, multi-counter billing, and daily profit loss analytics.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Barcode Scan Billing</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Stock Alerts</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Multi-Counter POS</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Daily P&L Report</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('POS & Inventory System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 4. CRM System -->
+                    <div class="glass-card service-card reveal suite-card delay-100" data-category="enterprise">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-users-gear"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Sales Teams & Service Agencies</div>
+                        <h3>CRM & Lead Management System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Complete customer relationship management with lead tracking, deal pipelines, automated WhatsApp/email follow-ups, and sales targets.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Lead Pipeline</span>
+                                <span class="service-tag" style="font-size:0.72rem;">WhatsApp/Email Automation</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Deal Stages</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Sales Targets</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('CRM & Lead Management System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 5. Restaurant System -->
+                    <div class="glass-card service-card reveal suite-card delay-200" data-category="retail">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-utensils"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Restaurants, Cafes & Outlets</div>
+                        <h3>Restaurant & Food Management System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Kitchen display system (KDS), table management, recipe costing, online food order integration, and inventory depletion.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Kitchen KDS</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Table Orders</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Recipe Costing</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Rider Track</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('Restaurant Management System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 6. Distribution System -->
+                    <div class="glass-card service-card reveal suite-card delay-300" data-category="distribution">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-truck-ramp-box"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Distributors, FMCG & Wholesale</div>
+                        <h3>Distribution Management System (DMS)</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Distributor route planning, mobile order booking for field agents, credit recovery tracking, and warehouse dispatch logs.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Route Booking</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Credit & Recovery</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Van Stock</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Distributor App</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('Distribution Management System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 7. Pharmacy POS -->
+                    <div class="glass-card service-card reveal suite-card delay-100" data-category="healthcare">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-prescription-bottle-medical"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Pharmacies, Medical Stores & Chains</div>
+                        <h3>Pharmacy & Healthcare POS System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Medicine batch expiry tracking, formula search, supplier purchase orders, regulatory compliance, and quick prescription billing.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Batch Expiry Alerts</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Salt/Formula Search</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Supplier Purchasing</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Prescription Billing</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('Pharmacy POS System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 8. Clinic System -->
+                    <div class="glass-card service-card reveal suite-card delay-200" data-category="healthcare">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-hospital-user"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Clinics, Hospitals & Doctors</div>
+                        <h3>Clinic & Patient Management System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Patient EMR records, online appointment scheduling, doctor fee splitting, lab test reports, and automated SMS reminders.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">EMR Patient History</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Doctor Scheduling</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Lab Report Portal</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Automated SMS</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('Clinic Management System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 9. HR & Payroll System -->
+                    <div class="glass-card service-card reveal suite-card delay-300" data-category="healthcare">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-user-tie"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Corporate Companies & Factories</div>
+                        <h3>HR & Payroll Management System</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Biometric attendance sync, automated salary slip generation, loan/advance tracking, provident fund, and leave approvals.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">Biometric Sync</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Automated Payslips</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Loan/Advance Logs</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Leave Approvals</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('HR & Payroll Management System')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+
+                    <!-- 10. Custom Software -->
+                    <div class="glass-card service-card reveal suite-card delay-100" data-category="enterprise">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                            <div class="service-icon-box" style="margin-bottom:0;"><i class="fas fa-laptop-code"></i></div>
+                            <div style="color:#F59E0B; font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div>
+                        <div class="badge" style="font-size:0.75rem; padding:0.2rem 0.6rem; margin-bottom:0.8rem;">Target: Unique Business Workflows & Operations</div>
+                        <h3>Custom Business Software</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.2rem;">Tailor-made software built strictly around your company operating procedures with custom database logic and mobile app extensions.</p>
+                        <div style="margin-bottom:1.5rem;">
+                            <strong style="font-size:0.82rem; color:var(--text-bright); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:0.5rem;">Core Modules:</strong>
+                            <div class="service-tags">
+                                <span class="service-tag" style="font-size:0.72rem;">100% Custom Workflow</span>
+                                <span class="service-tag" style="font-size:0.72rem;">API Integration</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Role Security</span>
+                                <span class="service-tag" style="font-size:0.72rem;">Dedicated SLA</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary" style="width:100%; padding:0.6rem 1rem; font-size:0.85rem;" onclick="prefillContactForm('Custom Tailored Business Software')"><i class="fas fa-laptop-code"></i> Request Solution Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Matrix Section -->
+        <section id="tech-stack" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge">
+                        <i class="fas fa-microchip"></i> Modern Technology Matrix
+                    </div>
+                    <h2 class="section-title">Built On The <span class="gradient-text-lime">World's Best</span> Tech Stack</h2>
+                    <p class="section-subtitle">
+                        We harness industry-leading frameworks, cloud infrastructure, AI models, and databases to build future-proof solutions.
+                    </p>
+                </div>
+
+                <div class="tech-tabs reveal delay-100">
+                    <button class="tech-tab-btn active" data-filter="all">All Tech</button>
+                    <button class="tech-tab-btn" data-filter="backend">Backend & Architecture</button>
+                    <button class="tech-tab-btn" data-filter="frontend">Frontend & Web</button>
+                    <button class="tech-tab-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="tech-tab-btn" data-filter="ai">AI & Data</button>
+                    <button class="tech-tab-btn" data-filter="devops">Cloud & DevOps</button>
+                </div>
+
+                <div class="tech-grid">
+                    <div class="tech-item-card reveal delay-100" data-category="backend">
+                        <div class="tech-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="tech-name">Enterprise ERP Engine</div>
+                        <div class="tech-desc">High Performance Architecture</div>
+                    </div>
+
+                    <div class="tech-item-card reveal delay-200" data-category="frontend">
+                        <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        <div class="tech-name">Modern Web Frontends</div>
+                        <div class="tech-desc">Dynamic Reactive Interfaces</div>
+                    </div>
+
+                    <div class="tech-item-card reveal delay-300" data-category="mobile">
+                        <div class="tech-icon"><i class="fas fa-mobile-retro"></i></div>
+                        <div class="tech-name">Mobile Field Apps</div>
+                        <div class="tech-desc">iOS & Android Native Apps</div>
+                    </div>
+
+                    <div class="tech-item-card reveal delay-100" data-category="ai">
+                        <div class="tech-icon"><i class="fas fa-brain"></i></div>
+                        <div class="tech-name">AI & Process Automation</div>
+                        <div class="tech-desc">LLM & Process Automation</div>
+                    </div>
+
+                    <div class="tech-item-card reveal delay-200" data-category="backend">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <div class="tech-name">Relational Data Stores</div>
+                        <div class="tech-desc">Secure ERP Database Architecture</div>
+                    </div>
+
+                    <div class="tech-item-card reveal delay-300" data-category="devops">
+                        <div class="tech-icon"><i class="fab fa-aws"></i></div>
+                        <div class="tech-name">Cloud & On-Premise Deploy</div>
+                        <div class="tech-desc">Containerized Scalable Deploy</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Calculator Section -->
+        <section id="calculator" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge badge-lime">
+                        <i class="fas fa-sliders"></i> Interactive Estimator
+                    </div>
+                    <h2 class="section-title">Estimate Your <span class="gradient-text">Project Scope</span> & Timeline</h2>
+                    <p class="section-subtitle">
+                        Select your required software solutions and features to get an instant engineering scope estimate and timeline.
+                    </p>
+                </div>
+
+                <div class="calc-container reveal delay-100">
+                    <div class="calc-grid">
+                        <div class="calc-inputs">
+                            <div class="calc-option-title">
+                                <i class="fas fa-desktop" style="color:var(--primary-blue);"></i> 1. Select Solution Type
+                            </div>
+
+                            <div class="platform-selector">
+                                <div class="platform-btn selected" data-complexity="Textile & Manufacturing ERP" data-base-weeks="5" data-platform-name="Textile & Manufacturing ERP">
+                                    <i class="fas fa-industry"></i>
+                                    <strong>Manufacturing & Textile ERP</strong>
+                                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">BOM, Looms & Factory Floor</p>
+                                </div>
+
+                                <div class="platform-btn" data-complexity="POS & Inventory System" data-base-weeks="4" data-platform-name="POS & Inventory System">
+                                    <i class="fas fa-cash-register"></i>
+                                    <strong>POS & Retail Inventory</strong>
+                                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Barcode Scan & Daily P&L</p>
+                                </div>
+
+                                <div class="platform-btn" data-complexity="Enterprise ERP & CRM" data-base-weeks="6" data-platform-name="Enterprise ERP & CRM Suite">
+                                    <i class="fas fa-building-gear"></i>
+                                    <strong>Enterprise ERP & CRM Suite</strong>
+                                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Finance, Leads & Operations</p>
+                                </div>
+
+                                <div class="platform-btn" data-complexity="Distribution & Supply Chain" data-base-weeks="5" data-platform-name="Distribution & HR System">
+                                    <i class="fas fa-truck-ramp-box"></i>
+                                    <strong>Distribution & HR System</strong>
+                                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.3rem;">Route Booking & Payroll</p>
+                                </div>
+                            </div>
+
+                            <div class="calc-option-title">
+                                <i class="fas fa-list-check" style="color:var(--accent-lime);"></i> 2. Select Features Required
+                            </div>
+
+                            <div class="features-selector">
+                                <label class="feature-check">
+                                    <input type="checkbox" data-weeks="0.5" data-feature="User Auth & Roles">
+                                    <span>User Roles & Security Authentication</span>
+                                </label>
+
+                                <label class="feature-check">
+                                    <input type="checkbox" data-weeks="1" data-feature="Payment Gateway Integration">
+                                    <span>Global Payment Gateway / Billing</span>
+                                </label>
+
+                                <label class="feature-check">
+                                    <input type="checkbox" data-weeks="1" data-feature="Admin Analytics Dashboard">
+                                    <span>Interactive Executive BI Dashboard</span>
+                                </label>
+
+                                <label class="feature-check">
+                                    <input type="checkbox" data-weeks="1" data-feature="Real-Time Data Sync">
+                                    <span>Real-Time Multi-Branch Stock Sync</span>
+                                </label>
+
+                                <label class="feature-check">
+                                    <input type="checkbox" data-weeks="1.5" data-feature="AI Chatbot Integration">
+                                    <span>Custom AI Assistant / Automation</span>
+                                </label>
+
+                                <label class="feature-check">
+                                    <input type="checkbox" data-weeks="1" data-feature="Mobile Field Booking App">
+                                    <span>Mobile App for Field Agents / Orders</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quote-summary-card">
+                            <div>
+                                <div class="badge" style="margin-bottom:0.5rem;">Project Scope Summary</div>
+                                <p style="font-size:0.9rem; color:var(--text-muted);">Estimated Engineering Plan:</p>
+                                <div class="quote-amount" id="calc-quote-amount">Custom Scope</div>
+                                <div class="quote-timeline" id="calc-quote-timeline">
+                                    <i class="far fa-clock" style="color:var(--accent-lime);"></i> Est. Timeline: <strong>4 - 6 Weeks</strong> | Dedicated Product Team
+                                </div>
+
+                                <ul style="list-style:none; font-size:0.85rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.6rem; margin-bottom:2rem;">
+                                    <li><i class="fas fa-check-circle" style="color:var(--accent-lime);"></i> Full Source Code & IP Ownership</li>
+                                    <li><i class="fas fa-check-circle" style="color:var(--accent-lime);"></i> Enterprise Security & Quality Audit</li>
+                                    <li><i class="fas fa-check-circle" style="color:var(--accent-lime);"></i> Automated Cloud / On-Premise Setup</li>
+                                    <li><i class="fas fa-check-circle" style="color:var(--accent-lime);"></i> Non-Disclosure Agreement (NDA) Protected</li>
+                                </ul>
+                            </div>
+
+                            <button id="calc-book-btn" class="btn btn-lime" style="width:100%;" data-estimate="Project Timeline: 4-6 weeks for Software Suite">
+                                <i class="fas fa-calendar-check"></i> Request Custom Solution Proposal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Process Timeline Section -->
+        <section id="process" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge badge-lime">
+                        <i class="fas fa-network-wired"></i> Engineering Methodology
+                    </div>
+                    <h2 class="section-title">How We Build <span class="gradient-text">High-Quality</span> Software</h2>
+                    <p class="section-subtitle">
+                        A structured 6-step software development lifecycle ensuring speed, security, and enterprise reliability.
+                    </p>
+                </div>
+
+                <div class="timeline-grid">
+                    <div class="glass-card step-card reveal delay-100">
+                        <div class="step-num">01</div>
+                        <h3>Discovery & Specs</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">We map business goals, database schema design, and software architecture blueprints.</p>
+                    </div>
+
+                    <div class="glass-card step-card reveal delay-200">
+                        <div class="step-num">02</div>
+                        <h3>UI/UX & Prototypes</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Interactive Figma design mockups and user flows crafted for maximum engagement.</p>
+                    </div>
+
+                    <div class="glass-card step-card reveal delay-300">
+                        <div class="step-num">03</div>
+                        <h3>Agile Development</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Clean scalable code, RESTful API endpoints, and reactive frontend components.</p>
+                    </div>
+
+                    <div class="glass-card step-card reveal delay-100">
+                        <div class="step-num">04</div>
+                        <h3>QA & Security Audit</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Rigorous automated unit testing, penetration tests, and vulnerability checks.</p>
+                    </div>
+
+                    <div class="glass-card step-card reveal delay-200">
+                        <div class="step-num">05</div>
+                        <h3>DevOps Deployment</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Automated CI/CD pipeline deployment to secure cloud infrastructure.</p>
+                    </div>
+
+                    <div class="glass-card step-card reveal delay-300">
+                        <div class="step-num">06</div>
+                        <h3>24/7 SLA Support</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Continuous monitoring, automated database backups, security patches, and scaling support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge">
+                        <i class="fas fa-quote-left"></i> Client Reviews
+                    </div>
+                    <h2 class="section-title">Trusted By <span class="gradient-text-lime">Global Leaders</span></h2>
+                    <p class="section-subtitle">
+                        Read how founders and CTOs rate Prowave Technologies for custom software development and digital solutions.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="glass-card testimonial-card reveal delay-100">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="color:var(--text-main); font-style:italic;">
+                            "Prowave engineered our Textile Manufacturing ERP from ground up. Their loom downtime tracking, raw material BOM, and production yield analytics were world-class!"
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar">AH</div>
+                            <div>
+                                <strong style="color:var(--text-bright); font-size:0.95rem; display:block;">Ahmed Hassan</strong>
+                                <span style="font-size:0.8rem; color:var(--text-muted);">Operations Director, Crest Textile Mills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card testimonial-card reveal delay-200">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="color:var(--text-main); font-style:italic;">
+                            "The POS & Inventory software gave us real-time control across 25 retail outlets with zero downtime during peak sales!"
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar">SK</div>
+                            <div>
+                                <strong style="color:var(--text-bright); font-size:0.95rem; display:block;">Sara Khan</strong>
+                                <span style="font-size:0.8rem; color:var(--text-muted);">Retail Head, StyleHub Outlets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card testimonial-card reveal delay-300">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="color:var(--text-main); font-style:italic;">
+                            "Top notch software house! Their Distribution Management & Field Order Booking app boosted our recovery speed by over 80%."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar">MR</div>
+                            <div>
+                                <strong style="color:var(--text-bright); font-size:0.95rem; display:block;">Marcus Vance</strong>
+                                <span style="font-size:0.8rem; color:var(--text-muted);">Managing Director, LogiFlow Distribution</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="badge badge-lime">
+                        <i class="fas fa-headset"></i> Start A Project
+                    </div>
+                    <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+                    <p class="section-subtitle">
+                        Have a project idea or need technical consultation? Reach out to Prowave Technologies engineering team today.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="reveal-left">
+                        <h3 style="font-size:1.8rem; margin-bottom:1.5rem;">Get In Touch With Our Engineering Leads</h3>
+                        <p style="color:var(--text-muted); margin-bottom:2.5rem;">
+                            Whether you are a manufacturing plant needing Textile ERP automation, a retail chain seeking POS inventory, or an enterprise upgrading CRM & HR, we are ready to discuss your vision.
+                        </p>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong style="color:var(--text-bright); display:block;">Email Us Direct</strong>
+                                <span style="color:var(--text-muted);">contact@prowave.tech</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon" style="background:rgba(132, 204, 22, 0.1); color:var(--accent-lime);">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong style="color:var(--text-bright); display:block;">Call / WhatsApp</strong>
+                                <span style="color:var(--text-muted);">+92 325 9385085</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong style="color:var(--text-bright); display:block;">Head Office</strong>
+                                <span style="color:var(--text-muted);">Prowave Tech Park, Software Technology Zone, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card reveal-right" style="padding:2.5rem;">
+                        <form id="contactForm" action="#contact" method="POST">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Ali Raza" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Work Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="ali@company.com" required>
+                            </div>
+
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                                <div class="form-group">
+                                    <label class="form-label" for="service">Service Needed</label>
+                                    <select id="service" name="service" class="form-select">
+                                        <option value="Textile & Manufacturing ERP">Textile & Manufacturing ERP</option>
+                                        <option value="ERP Management System">ERP Management System</option>
+                                        <option value="POS & Inventory System">POS & Inventory System</option>
+                                        <option value="CRM & Lead Management">CRM & Lead Management</option>
+                                        <option value="Distribution Management (DMS)">Distribution Management (DMS)</option>
+                                        <option value="Pharmacy Management System">Pharmacy Management System</option>
+                                        <option value="Clinic Management System">Clinic Management System</option>
+                                        <option value="HR & Payroll System">HR & Payroll System</option>
+                                        <option value="Custom Business Software">Custom Business Software</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="budget">Project Scale</label>
+                                    <select id="budget" name="budget" class="form-select">
+                                        <option value="MVP / Growth Project">MVP / Growth Project</option>
+                                        <option value="Mid-Enterprise Product">Mid-Enterprise Product</option>
+                                        <option value="Large Scale Factory Platform">Large Scale Factory Platform</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-message">Project Description *</label>
+                                <textarea id="contact-message" name="message" rows="4" class="form-textarea" placeholder="Tell us about your project requirements..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width:100%;">
+                                <i class="fas fa-paper-plane"></i> Send Project Proposal Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating AI Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div id="chat-trigger" class="chat-trigger" title="Chat with Prowave AI Assistant">
+            <i class="fas fa-robot"></i>
+        </div>
+
+        <div id="chat-panel" class="chat-panel">
+            <div class="chat-header">
+                <div style="display:flex; align-items:center; gap:0.6rem;">
+                    <div style="width:10px; height:10px; border-radius:50%; background:var(--accent-lime); box-shadow:0 0 10px var(--accent-lime);"></div>
+                    <strong style="color:var(--text-bright); font-size:0.95rem;">Prowave AI Consultant</strong>
+                </div>
+                <i id="chat-close" class="fas fa-times" style="color:var(--text-muted); cursor:pointer;"></i>
+            </div>
+
+            <div id="chat-msg-container" class="chat-messages">
+                <div class="msg-bubble msg-bot">
+                    👋 Hello! Welcome to <strong>Prowave Technologies</strong>. I am your AI software consultant. Ask me about our 10 Enterprise ERP Suites, Textile Manufacturing ERP, POS, CRM, Pharmacy, DMS, or HR Systems!
+                </div>
+            </div>
+
+            <div style="padding:0.5rem 0.8rem; display:flex; gap:0.4rem; overflow-x:auto; background:#070A12;">
+                <button class="chat-chip" data-question="Tell me about Textile Manufacturing ERP" style="padding:0.25rem 0.6rem; font-size:0.75rem; background:rgba(132,204,22,0.1); border:1px solid rgba(132,204,22,0.3); color:var(--accent-lime); border-radius:12px; cursor:pointer; white-space:nowrap;">
+                    🏭 Manufacturing ERP
+                </button>
+                <button class="chat-chip" data-question="What POS & ERP suites do you offer?" style="padding:0.25rem 0.6rem; font-size:0.75rem; background:rgba(0,163,255,0.1); border:1px solid rgba(0,163,255,0.3); color:var(--primary-blue); border-radius:12px; cursor:pointer; white-space:nowrap;">
+                    🚀 Enterprise Software Suites
+                </button>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chat-input-field" placeholder="Type a message or question...">
+                <button id="chat-send-btn" class="btn btn-primary" style="padding:0.6rem 1rem;">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#hero" class="brand-logo" style="margin-bottom:1rem;">
+                        <img src="public/images/logo.png" alt="Prowave Technologies Logo">
+                        <span>PROWAVE <span class="gradient-text-lime">TECH</span></span>
+                    </a>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.5rem; max-width:320px;">
+                        Enterprise software development studio specialized in manufacturing ERP, POS inventory, CRM portals, distribution DMS, clinic, pharmacy, and HR payroll platforms.
+                    </p>
+                    <div style="display:flex; gap:1rem; font-size:1.2rem; color:var(--text-muted);">
+                        <a href="#" style="color:var(--primary-blue);"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color:var(--primary-blue);"><i class="fab fa-github"></i></a>
+                        <a href="#" style="color:var(--primary-blue);"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color:var(--primary-blue);"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="font-size:1.1rem; margin-bottom:1.2rem;">Core Software Suites</h4>
+                    <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.9rem; color:var(--text-muted);">
+                        <li><a href="#solutions">Textile & Manufacturing ERP</a></li>
+                        <li><a href="#solutions">POS & Inventory System</a></li>
+                        <li><a href="#solutions">CRM & Lead Automation</a></li>
+                        <li><a href="#solutions">Distribution DMS & Route App</a></li>
+                        <li><a href="#solutions">HR & Biometric Payroll</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-size:1.1rem; margin-bottom:1.2rem;">Quick Links</h4>
+                    <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.9rem; color:var(--text-muted);">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#solutions">Software Suites</a></li>
+                        <li><a href="#tech-stack">Technology Matrix</a></li>
+                        <li><a href="#calculator">Scope Estimator</a></li>
+                        <li><a href="#portfolio">Featured Case Studies</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-size:1.1rem; margin-bottom:1.2rem;">Tech Insights Newsletter</h4>
+                    <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
+                        Subscribe for quarterly software architecture guides & manufacturing ERP insights.
+                    </p>
+                    <form onsubmit="event.preventDefault(); alert('Subscribed to Prowave Tech Newsletter!');" style="display:flex; gap:0.5rem;">
+                        <input type="email" placeholder="Your email address" style="padding:0.6rem 0.8rem; background:rgba(15,23,42,0.8); border:1px solid var(--border-glass); border-radius:var(--radius-sm); color:#FFF; font-size:0.85rem; width:100%;">
+                        <button type="submit" class="btn btn-lime" style="padding:0.6rem 1rem;"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PROWAVE TECHNOLOGIES IT SERVICES. All Rights Reserved. Engineered with High-Performance Web Standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Engine -->
+    <script src="public/js/main.js"></script>
+    <script src="public/js/calculator.js"></script>
+    <script src="public/js/chatbot.js"></script>
+</body>
+</html>
